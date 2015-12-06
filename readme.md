@@ -6,10 +6,15 @@
 3. Install node dependencies: `npm i`
 4. Run figwheel: `lein figwheel` or `rlwrap lein figwheel` (if rlwrap installed)
 5. Run packager: `npm start` or `./node_modules/react-native/packager/packager.sh`
-6. Open `ios/figTest.xcodeproj` in Xcode
-7. Run app in simulator
-8. You should see the figwheel dependencies load in the Xcode Console
-9. Make changes to your code or in the repl and watch figwheel do it's magic
+
+6. Build and launch the app in simulator without XCode: `make launch`
+OR
+6.1 `make bundle`
+6.2 Open `ios/figTest.xcodeproj` in Xcode
+6.3 Run app in simulator
+
+7. You should see the figwheel dependencies load in the Xcode Console
+8. Make changes to your code or in the repl and watch figwheel do its magic
 
 (Optionally (and it's a bit nicer to use) you can press `⌘ + D ` in the simulator and select `Debug in Chrome` to have your debug ouput in the chrome browser. Be warned that this can lead to errors with your code as Chrome's V8 and iOS' JavascriptCore have some functions that behave differently)
 
